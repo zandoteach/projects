@@ -70,3 +70,15 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
 }
+
+/* Works on SVG <text> elements */
+.outline-text {
+  fill: white;              /* text color */
+  stroke: black;            /* outline color */
+  stroke-width: 2px;        /* outline thickness */
+  font-family: Arial, sans-serif;
+  text-anchor: middle;
+  font-size: 24px;
+  stroke-linejoin: round;   /* smoother corners (miter|round|bevel) */
+  paint-order: stroke fill; /* make sure stroke appears outside the fill */
+}
